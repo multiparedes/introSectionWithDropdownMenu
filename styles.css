@@ -333,6 +333,7 @@ html {
     }
 
     .bg {
+        display: none;
         position: fixed;
         z-index: 10;
         width: 100%;
@@ -343,17 +344,12 @@ html {
     }
 
     .bg[aria-active = "true"] {
-
-
+        display: block;
         background-color: hsla(0, 0%, 41%, 0.5);
     }
 
     .primary-nav {
-        padding-left: 2em;
-        justify-content: left;
         flex-flow: column;
-        flex-wrap: wrap;
-
     }
 
     .nav-bar, .user-section {
