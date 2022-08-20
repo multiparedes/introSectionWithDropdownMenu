@@ -2,7 +2,6 @@ const hambMenu = document.querySelector(".hamburger-link");
 const menuIcon = document.querySelector(".hamburger");
 
 const navMenu = document.querySelector(".navigation-container");
-const navMenuBg = document.querySelector(".bg");
 
 hambMenu.addEventListener("click", () => {
 
@@ -10,11 +9,9 @@ hambMenu.addEventListener("click", () => {
 
     if(menuStat == "false") {
         navMenu.setAttribute("aria-selected", "true")
-        navMenuBg.setAttribute("aria-active", "true")
 
         menuIcon.style.backgroundImage = "url('images/icon-close-menu.svg')"
     } else {
-        navMenuBg.setAttribute("aria-active", "false")
         navMenu.setAttribute("aria-selected", "false")
 
         menuIcon.style.backgroundImage = "url('images/icon-menu.svg')"

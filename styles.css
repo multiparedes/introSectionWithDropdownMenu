@@ -330,22 +330,7 @@ html {
 
     .navigation-container[aria-selected="true"] {
         transform: translateX(0%);
-    }
-
-    .bg {
-        display: none;
-        position: fixed;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        margin-top: -2em;
-
-        transition: all 200ms ease-in-out;
-    }
-
-    .bg[aria-active = "true"] {
-        display: block;
-        background-color: hsla(0, 0%, 41%, 0.5);
+        box-shadow: 0 0 0 100vmax hsla(0, 0%, 41%, 0.5);
     }
 
     .primary-nav {

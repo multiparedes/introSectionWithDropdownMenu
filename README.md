@@ -48,6 +48,7 @@ In this challenge I practiced mobile navigations bars and a learnt a little more
 
 I run in a little issue with the mobile menu and where if I expand the dropdown menu with the icons it shifts, I fixed it by just hidding it, if you don't see it, it dosn't exist jeje. 
 
+UPDATE: I just saw a better way of having the gray background on the mobile view without the need of a new div, only with a `box-shadow` that expands to fullscreen when the hamburger menu is pressed. Ty Kevin Powel.
 
 ## Author
 
