@@ -228,7 +228,7 @@ html {
     display: none;
 }
 
-.dropdown-menu[aria-active="true"] {
+.dropdown-menu[data-shown="true"] {
     display: flex;
 }
 
@@ -328,16 +328,12 @@ html {
         transition: all 200ms ease-in-out;
     }
 
-    .navigation-container[aria-selected="true"] {
+    .navigation-container[data-shown="true"] {
         transform: translateX(0%);
         box-shadow: 0 0 0 100vmax hsla(0, 0%, 41%, 0.5);
     }
 
-    .primary-nav {
-        flex-flow: column;
-    }
-
-    .nav-bar, .user-section {
+    .nav-bar, .user-section, .primary-nav{
         flex-flow: column;
     }
 
