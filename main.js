@@ -22,16 +22,13 @@ hambMenu.addEventListener("click", () => {
 const dropdowns = document.querySelectorAll(".dropdown")
 
 for (let index = 0; index < dropdowns.length; index++) {
-    dropdowns[index].addEventListener("click", () => {
-
-        var dropdownStatus = dropdowns[index].nextElementSibling.getAttribute("data-shown");
-
-        if(dropdownStatus == "false") {
-            dropdowns[index].nextElementSibling.setAttribute("data-shown", "true");
-            dropdowns[index].getElementsByTagName("span")[0].style.backgroundImage = "url('images/icon-arrow-up.svg')";
-        } else {
-            dropdowns[index].nextElementSibling.setAttribute("data-shown", "false");
-            dropdowns[index].getElementsByTagName("span")[0].style.backgroundImage = "url('images/icon-arrow-down.svg')";
-        }
-    })    
+    dropdowns[index].addEventListener("focusin", () => {
+        dropdowns[index].nextElementSibling.setAttribute("data-shown", "true");
+        dropdowns[index].getElementsByTagName("span")[0].style.backgroundImage = "url('images/icon-arrow-up.svg')";
+    }) 
+    
+    dropdowns[index].addEventListener("focusout", () => {
+        dropdowns[index].nextElementSibling.setAttribute("data-shown", "false");
+        dropdowns[index].getElementsByTagName("span")[0].style.backgroundImage = "url('images/icon-arrow-down.svg')";
+    })
 }
